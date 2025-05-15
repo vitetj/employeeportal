@@ -51,7 +51,7 @@
     "ru": "Russian"
   },
   "dashboard": {
-    "welcome": "Hello, {{name}}",
+    "welcome": "Hello, {{name}}"
   },
   "notifications": {
     "leaveApproved": {
@@ -64,7 +64,7 @@
       "message": "Your IT support ticket has been updated",
       "time": "5 hours ago"
     },
-    "viewAll": "View all notifications"
+    "viewAll": "View all notifications",
     "stats": {
       "weeklyHours": "Weekly Hours",
       "leaveBalance": "Leave Balance",

@@ -51,7 +51,7 @@
     "ru": "Russe"
   },
   "dashboard": {
-    "welcome": "Bonjour, {{name}}",
+    "welcome": "Bonjour, {{name}}"
   },
   "notifications": {
     "leaveApproved": {
@@ -64,7 +64,7 @@
       "message": "Votre ticket de support IT a été mis à jour",
       "time": "il y a 5 heures"
     },
-    "viewAll": "Voir toutes les notifications"
+    "viewAll": "Voir toutes les notifications",
     "stats": {
       "weeklyHours": "Heures hebdomadaires",
       "leaveBalance": "Solde de congés",

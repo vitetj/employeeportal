@@ -51,7 +51,7 @@
     "ru": "Ruso"
   },
   "dashboard": {
-    "welcome": "Hola, {{name}}",
+    "welcome": "Hola, {{name}}"
   },
   "notifications": {
     "leaveApproved": {
@@ -64,7 +64,7 @@
       "message": "Su ticket de soporte IT ha sido actualizado",
       "time": "hace 5 horas"
     },
-    "viewAll": "Ver todas las notificaciones"
+    "viewAll": "Ver todas las notificaciones",
     "stats": {
       "weeklyHours": "Horas semanales",
       "leaveBalance": "Balance de ausencias",
