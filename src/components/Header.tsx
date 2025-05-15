@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Menu, Bell, User, LogOut } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import LanguageSelector from './LanguageSelector';
@@ -11,6 +12,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
 
@@ -40,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
         </button>
         
         <a className="navbar-brand" href="/">
-          <span className="text-orange fw-bold">Employee</span> Portal
+          <span className="text-orange fw-bold">{t('common.brand.employee')}</span> {t('common.brand.portal')}
         </a>
         
         <div className="d-flex align-items-center ms-auto">
@@ -62,30 +64,30 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
             {showNotifications && (
               <div className="dropdown-menu dropdown-menu-end show p-0 shadow" style={{ minWidth: '320px' }}>
                 <div className="p-3 border-bottom">
-                  <h6 className="mb-0">Notifications</h6>
+                  <h6 className="mb-0">{t('common.notifications')}</h6>
                 </div>
                 <div className="list-group list-group-flush">
                   <a href="#" className="list-group-item list-group-item-action">
                     <div className="d-flex align-items-center">
                       <div className="flex-grow-1">
-                        <p className="mb-1 fw-bold">Leave Request Approved</p>
-                        <p className="text-muted small mb-0">Your leave request has been approved by Manager</p>
-                        <p className="text-muted small">2 hours ago</p>
+                        <p className="mb-1 fw-bold">{t('notifications.leaveApproved.title')}</p>
+                        <p className="text-muted small mb-0">{t('notifications.leaveApproved.message')}</p>
+                        <p className="text-muted small">{t('notifications.leaveApproved.time')}</p>
                       </div>
                     </div>
                   </a>
                   <a href="#" className="list-group-item list-group-item-action">
                     <div className="d-flex align-items-center">
                       <div className="flex-grow-1">
-                        <p className="mb-1 fw-bold">Ticket Status Update</p>
-                        <p className="text-muted small mb-0">Your IT support ticket has been updated</p>
-                        <p className="text-muted small">5 hours ago</p>
+                        <p className="mb-1 fw-bold">{t('notifications.ticketUpdate.title')}</p>
+                        <p className="text-muted small mb-0">{t('notifications.ticketUpdate.message')}</p>
+                        <p className="text-muted small">{t('notifications.ticketUpdate.time')}</p>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div className="p-2 border-top text-center">
-                  <a href="#" className="text-decoration-none small">View all notifications</a>
+                  <a href="#" className="text-decoration-none small">{t('notifications.viewAll')}</a>
                 </div>
               </div>
             )}
@@ -115,14 +117,14 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
                   href="/profile"
                 >
                   <User size={16} className="me-2" />
-                  Profile
+                  {t('common.navigation.profile')}
                 </a>
                 <button 
                   className="dropdown-item d-flex align-items-center text-danger" 
                   onClick={handleLogout}
                 >
                   <LogOut size={16} className="me-2" />
-                  Logout
+                  {t('common.actions.logout')}
                 </button>
               </div>
             )}

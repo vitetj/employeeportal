@@ -1,10 +1,15 @@
 {
   "common": {
+    "brand": {
+      "employee": "Portal del",
+      "portal": "Empleado"
+    },
     "actions": {
       "save": "Guardar",
       "cancel": "Cancelar",
       "edit": "Editar",
       "delete": "Eliminar",
+      "logout": "Cerrar sesión",
       "create": "Crear",
       "submit": "Enviar",
       "search": "Buscar",
@@ -13,6 +18,7 @@
       "download": "Descargar",
       "close": "Cerrar"
     },
+    "notifications": "Notificaciones",
     "status": {
       "pending": "Pendiente",
       "approved": "Aprobado",
@@ -46,6 +52,19 @@
   },
   "dashboard": {
     "welcome": "Hola, {{name}}",
+  },
+  "notifications": {
+    "leaveApproved": {
+      "title": "Solicitud de ausencia aprobada",
+      "message": "Su solicitud de ausencia ha sido aprobada por el gerente",
+      "time": "hace 2 horas"
+    },
+    "ticketUpdate": {
+      "title": "Actualización de ticket",
+      "message": "Su ticket de soporte IT ha sido actualizado",
+      "time": "hace 5 horas"
+    },
+    "viewAll": "Ver todas las notificaciones"
     "stats": {
       "weeklyHours": "Horas semanales",
       "leaveBalance": "Balance de ausencias",

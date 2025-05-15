@@ -1,10 +1,15 @@
 {
   "common": {
+    "brand": {
+      "employee": "Портал",
+      "portal": "Сотрудника"
+    },
     "actions": {
       "save": "Сохранить",
       "cancel": "Отмена",
       "edit": "Редактировать",
       "delete": "Удалить",
+      "logout": "Выйти",
       "create": "Создать",
       "submit": "Отправить",
       "search": "Поиск",
@@ -13,6 +18,7 @@
       "download": "Скачать",
       "close": "Закрыть"
     },
+    "notifications": "Уведомления",
     "status": {
       "pending": "В ожидании",
       "approved": "Одобрено",
@@ -46,6 +52,19 @@
   },
   "dashboard": {
     "welcome": "Здравствуйте, {{name}}",
+  },
+  "notifications": {
+    "leaveApproved": {
+      "title": "Отпуск одобрен",
+      "message": "Ваш запрос на отпуск был одобрен руководителем",
+      "time": "2 часа назад"
+    },
+    "ticketUpdate": {
+      "title": "Обновление заявки",
+      "message": "Ваша заявка в IT поддержку была обновлена",
+      "time": "5 часов назад"
+    },
+    "viewAll": "Показать все уведомления"
     "stats": {
       "weeklyHours": "Недельные часы",
       "leaveBalance": "Баланс отпуска",

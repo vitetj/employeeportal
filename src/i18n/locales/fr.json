@@ -1,10 +1,15 @@
 {
   "common": {
+    "brand": {
+      "employee": "Portail",
+      "portal": "Employé"
+    },
     "actions": {
       "save": "Enregistrer",
       "cancel": "Annuler",
       "edit": "Modifier",
       "delete": "Supprimer",
+      "logout": "Déconnexion",
       "create": "Créer",
       "submit": "Soumettre",
       "search": "Rechercher",
@@ -13,6 +18,7 @@
       "download": "Télécharger",
       "close": "Fermer"
     },
+    "notifications": "Notifications",
     "status": {
       "pending": "En attente",
       "approved": "Approuvé",
@@ -46,6 +52,19 @@
   },
   "dashboard": {
     "welcome": "Bonjour, {{name}}",
+  },
+  "notifications": {
+    "leaveApproved": {
+      "title": "Demande de congé approuvée",
+      "message": "Votre demande de congé a été approuvée par le responsable",
+      "time": "il y a 2 heures"
+    },
+    "ticketUpdate": {
+      "title": "Mise à jour du ticket",
+      "message": "Votre ticket de support IT a été mis à jour",
+      "time": "il y a 5 heures"
+    },
+    "viewAll": "Voir toutes les notifications"
     "stats": {
       "weeklyHours": "Heures hebdomadaires",
       "leaveBalance": "Solde de congés",
