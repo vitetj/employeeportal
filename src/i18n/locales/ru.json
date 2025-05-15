@@ -51,7 +51,7 @@
     "ru": "Русский"
   },
   "dashboard": {
-    "welcome": "Здравствуйте, {{name}}",
+    "welcome": "Здравствуйте, {{name}}"
   },
   "notifications": {
     "leaveApproved": {
@@ -64,7 +64,7 @@
       "message": "Ваша заявка в IT поддержку была обновлена",
       "time": "5 часов назад"
     },
-    "viewAll": "Показать все уведомления"
+    "viewAll": "Показать все уведомления",
     "stats": {
       "weeklyHours": "Недельные часы",
       "leaveBalance": "Баланс отпуска",
