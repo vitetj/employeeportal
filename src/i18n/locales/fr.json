@@ -29,6 +29,8 @@
       "inactive": "Inactif"
     },
     "navigation": {
+      "menu": "Menu",
+      "directory": "Annuaire",
       "dashboard": "Tableau de bord",
       "timeTracking": "Suivi du temps",
       "leaveManagement": "Gestion des congés",
@@ -41,7 +43,13 @@
       "antispam": "Antispam",
       "documents": "Documents",
       "tickets": "Système de tickets",
-      "profile": "Profil"
+      "profile": "Profil",
+      "directory": "Annuaire"
+    },
+    "help": {
+      "title": "Besoin d'aide ?",
+      "message": "Contactez le support IT au poste 1234 ou créez un nouveau ticket dans le système.",
+      "reportIssue": "Signaler un problème critique"
     }
   },
   "languages": {

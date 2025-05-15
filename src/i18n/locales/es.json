@@ -29,6 +29,8 @@
       "inactive": "Inactivo"
     },
     "navigation": {
+      "menu": "Menú",
+      "directory": "Directorio",
       "dashboard": "Panel",
       "timeTracking": "Control de tiempo",
       "leaveManagement": "Gestión de ausencias",
@@ -41,7 +43,13 @@
       "antispam": "Antispam",
       "documents": "Documentos",
       "tickets": "Sistema de tickets",
-      "profile": "Perfil"
+      "profile": "Perfil",
+      "directory": "Directorio"
+    },
+    "help": {
+      "title": "¿Necesita ayuda?",
+      "message": "Contacte con soporte IT en la ext. 1234 o cree un nuevo ticket en el sistema.",
+      "reportIssue": "Reportar problema crítico"
     }
   },
   "languages": {
