@@ -1,0 +1,68 @@
+{
+  "common": {
+    "actions": {
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "create": "Créer",
+      "submit": "Soumettre",
+      "search": "Rechercher",
+      "filter": "Filtrer",
+      "view": "Voir",
+      "download": "Télécharger",
+      "close": "Fermer"
+    },
+    "status": {
+      "pending": "En attente",
+      "approved": "Approuvé",
+      "rejected": "Rejeté",
+      "completed": "Terminé",
+      "cancelled": "Annulé",
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "navigation": {
+      "dashboard": "Tableau de bord",
+      "timeTracking": "Suivi du temps",
+      "leaveManagement": "Gestion des congés",
+      "recuperation": "Temps de récupération",
+      "bookings": "Réservations",
+      "expenses": "Notes de frais",
+      "tools": "Outils d'entreprise",
+      "equipment": "Équipement",
+      "mobile": "Forfait mobile",
+      "antispam": "Antispam",
+      "documents": "Documents",
+      "tickets": "Système de tickets",
+      "profile": "Profil"
+    }
+  },
+  "languages": {
+    "en": "Anglais",
+    "fr": "Français",
+    "es": "Espagnol",
+    "ru": "Russe"
+  },
+  "dashboard": {
+    "welcome": "Bonjour, {{name}}",
+    "stats": {
+      "weeklyHours": "Heures hebdomadaires",
+      "leaveBalance": "Solde de congés",
+      "recuperationHours": "Heures de récupération",
+      "openTickets": "Tickets ouverts"
+    }
+  },
+  "translation": {
+    "title": "Gestion des traductions",
+    "addKey": "Ajouter une clé de traduction",
+    "editKey": "Modifier la clé de traduction",
+    "keyName": "Nom de la clé",
+    "languages": "Langues",
+    "actions": {
+      "translate": "Traduire",
+      "import": "Importer les traductions",
+      "export": "Exporter les traductions"
+    }
+  }
+}

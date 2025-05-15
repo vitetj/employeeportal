@@ -1,0 +1,68 @@
+{
+  "common": {
+    "actions": {
+      "save": "Сохранить",
+      "cancel": "Отмена",
+      "edit": "Редактировать",
+      "delete": "Удалить",
+      "create": "Создать",
+      "submit": "Отправить",
+      "search": "Поиск",
+      "filter": "Фильтр",
+      "view": "Просмотр",
+      "download": "Скачать",
+      "close": "Закрыть"
+    },
+    "status": {
+      "pending": "В ожидании",
+      "approved": "Одобрено",
+      "rejected": "Отклонено",
+      "completed": "Завершено",
+      "cancelled": "Отменено",
+      "active": "Активно",
+      "inactive": "Неактивно"
+    },
+    "navigation": {
+      "dashboard": "Панель управления",
+      "timeTracking": "Учет времени",
+      "leaveManagement": "Управление отпусками",
+      "recuperation": "Отгулы",
+      "bookings": "Бронирования",
+      "expenses": "Расходы",
+      "tools": "Инструменты",
+      "equipment": "Оборудование",
+      "mobile": "Мобильный план",
+      "antispam": "Антиспам",
+      "documents": "Документы",
+      "tickets": "Система заявок",
+      "profile": "Профиль"
+    }
+  },
+  "languages": {
+    "en": "Английский",
+    "fr": "Французский",
+    "es": "Испанский",
+    "ru": "Русский"
+  },
+  "dashboard": {
+    "welcome": "Здравствуйте, {{name}}",
+    "stats": {
+      "weeklyHours": "Недельные часы",
+      "leaveBalance": "Баланс отпуска",
+      "recuperationHours": "Часы отгулов",
+      "openTickets": "Открытые заявки"
+    }
+  },
+  "translation": {
+    "title": "Управление переводами",
+    "addKey": "Добавить ключ перевода",
+    "editKey": "Редактировать ключ перевода",
+    "keyName": "Имя ключа",
+    "languages": "Языки",
+    "actions": {
+      "translate": "Перевести",
+      "import": "Импорт переводов",
+      "export": "Экспорт переводов"
+    }
+  }
+}

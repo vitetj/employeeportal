@@ -1,0 +1,68 @@
+{
+  "common": {
+    "actions": {
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "create": "Crear",
+      "submit": "Enviar",
+      "search": "Buscar",
+      "filter": "Filtrar",
+      "view": "Ver",
+      "download": "Descargar",
+      "close": "Cerrar"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "approved": "Aprobado",
+      "rejected": "Rechazado",
+      "completed": "Completado",
+      "cancelled": "Cancelado",
+      "active": "Activo",
+      "inactive": "Inactivo"
+    },
+    "navigation": {
+      "dashboard": "Panel",
+      "timeTracking": "Control de tiempo",
+      "leaveManagement": "Gestión de ausencias",
+      "recuperation": "Tiempo de recuperación",
+      "bookings": "Reservas",
+      "expenses": "Gastos",
+      "tools": "Herramientas",
+      "equipment": "Equipamiento",
+      "mobile": "Plan móvil",
+      "antispam": "Antispam",
+      "documents": "Documentos",
+      "tickets": "Sistema de tickets",
+      "profile": "Perfil"
+    }
+  },
+  "languages": {
+    "en": "Inglés",
+    "fr": "Francés",
+    "es": "Español",
+    "ru": "Ruso"
+  },
+  "dashboard": {
+    "welcome": "Hola, {{name}}",
+    "stats": {
+      "weeklyHours": "Horas semanales",
+      "leaveBalance": "Balance de ausencias",
+      "recuperationHours": "Horas de recuperación",
+      "openTickets": "Tickets abiertos"
+    }
+  },
+  "translation": {
+    "title": "Gestión de traducciones",
+    "addKey": "Añadir clave de traducción",
+    "editKey": "Editar clave de traducción",
+    "keyName": "Nombre de la clave",
+    "languages": "Idiomas",
+    "actions": {
+      "translate": "Traducir",
+      "import": "Importar traducciones",
+      "export": "Exportar traducciones"
+    }
+  }
+}

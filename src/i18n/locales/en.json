@@ -1,0 +1,68 @@
+{
+  "common": {
+    "actions": {
+      "save": "Save",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete",
+      "create": "Create",
+      "submit": "Submit",
+      "search": "Search",
+      "filter": "Filter",
+      "view": "View",
+      "download": "Download",
+      "close": "Close"
+    },
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "completed": "Completed",
+      "cancelled": "Cancelled",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "navigation": {
+      "dashboard": "Dashboard",
+      "timeTracking": "Time Tracking",
+      "leaveManagement": "Leave Management",
+      "recuperation": "Recuperation Time",
+      "bookings": "Bookings",
+      "expenses": "Expenses",
+      "tools": "Company Tools",
+      "equipment": "Equipment",
+      "mobile": "Mobile Plan",
+      "antispam": "Antispam",
+      "documents": "Documents",
+      "tickets": "Ticket System",
+      "profile": "Profile"
+    }
+  },
+  "languages": {
+    "en": "English",
+    "fr": "French",
+    "es": "Spanish",
+    "ru": "Russian"
+  },
+  "dashboard": {
+    "welcome": "Hello, {{name}}",
+    "stats": {
+      "weeklyHours": "Weekly Hours",
+      "leaveBalance": "Leave Balance",
+      "recuperationHours": "Recuperation Hours",
+      "openTickets": "Open Tickets"
+    }
+  },
+  "translation": {
+    "title": "Translation Management",
+    "addKey": "Add Translation Key",
+    "editKey": "Edit Translation Key",
+    "keyName": "Key Name",
+    "languages": "Languages",
+    "actions": {
+      "translate": "Translate",
+      "import": "Import Translations",
+      "export": "Export Translations"
+    }
+  }
+}

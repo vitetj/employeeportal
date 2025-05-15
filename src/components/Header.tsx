@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Menu, Bell, User, LogOut } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import LanguageSelector from './LanguageSelector';
 
 interface HeaderProps {
   toggleSidebar: () => void;
@@ -53,6 +54,10 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
                 2
               </span>
             </button>
+            
+            <div className="ms-2 d-inline-block">
+              <LanguageSelector />
+            </div>
             
             {showNotifications && (
               <div className="dropdown-menu dropdown-menu-end show p-0 shadow" style={{ minWidth: '320px' }}>
