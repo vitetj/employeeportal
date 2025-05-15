@@ -59,7 +59,42 @@
     "ru": "Russian"
   },
   "dashboard": {
-    "welcome": "Hello, {{name}}"
+    "welcome": "Hello, {{name}}",
+    "target": "Target: {{hours}} hrs",
+    "vacationDaysRemaining": "Vacation days remaining",
+    "hoursStatus": "{{hours}} hrs pending",
+    "ticketsInProgress": "{{count}} in progress",
+    "todayTimeEntry": "Today's Time Entry",
+    "workingHours": "Working Hours",
+    "total": "Total",
+    "hours": "{{count}} hours",
+    "notes": "Notes",
+    "noTimeEntry": "No time entry recorded for today",
+    "recordTime": "Record Time",
+    "upcomingLeave": "Upcoming Leave",
+    "leaveTypes": {
+      "vacation": "Vacation Leave",
+      "sick": "Sick Leave",
+      "personal": "Personal Leave",
+      "other": "Other Leave"
+    },
+    "duration": "Duration",
+    "days": "{{count}} {{count, plural, one {day} other {days}}}",
+    "reason": "Reason",
+    "noUpcomingLeave": "No upcoming leave scheduled",
+    "requestLeave": "Request Leave",
+    "recentTickets": "Recent Tickets",
+    "table": {
+      "id": "ID",
+      "title": "Title",
+      "category": "Category",
+      "priority": "Priority",
+      "status": "Status",
+      "created": "Created",
+      "action": "Action"
+    },
+    "noTickets": "No tickets found",
+    "viewAllTickets": "View All Tickets"
   },
   "notifications": {
     "leaveApproved": {

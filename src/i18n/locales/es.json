@@ -59,7 +59,42 @@
     "ru": "Ruso"
   },
   "dashboard": {
-    "welcome": "Hola, {{name}}"
+    "welcome": "Hola, {{name}}",
+    "target": "Objetivo: {{hours}} hrs",
+    "vacationDaysRemaining": "Días de vacaciones restantes",
+    "hoursStatus": "{{hours}} hrs pendientes",
+    "ticketsInProgress": "{{count}} en progreso",
+    "todayTimeEntry": "Registro de hoy",
+    "workingHours": "Horas de trabajo",
+    "total": "Total",
+    "hours": "{{count}} horas",
+    "notes": "Notas",
+    "noTimeEntry": "No hay registros para hoy",
+    "recordTime": "Registrar tiempo",
+    "upcomingLeave": "Próximas ausencias",
+    "leaveTypes": {
+      "vacation": "Vacaciones",
+      "sick": "Baja por enfermedad",
+      "personal": "Permiso personal",
+      "other": "Otra ausencia"
+    },
+    "duration": "Duración",
+    "days": "{{count}} {{count, plural, one {día} other {días}}}",
+    "reason": "Motivo",
+    "noUpcomingLeave": "No hay ausencias programadas",
+    "requestLeave": "Solicitar ausencia",
+    "recentTickets": "Tickets recientes",
+    "table": {
+      "id": "ID",
+      "title": "Título",
+      "category": "Categoría",
+      "priority": "Prioridad",
+      "status": "Estado",
+      "created": "Creado",
+      "action": "Acción"
+    },
+    "noTickets": "No se encontraron tickets",
+    "viewAllTickets": "Ver todos los tickets"
   },
   "notifications": {
     "leaveApproved": {

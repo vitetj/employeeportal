@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { 
   Clock, 
   Calendar, 
@@ -16,6 +17,7 @@ import { format } from 'date-fns';
 
 const Dashboard = () => {
   const { currentUser } = useAuth();
+  const { t } = useTranslation();
   const { 
     timeEntries, 
     leaveRequests, 
@@ -45,68 +47,68 @@ const Dashboard = () => {
   return (
     <div className="container-fluid px-4">
       <PageHeader 
-        title={`Hello, ${currentUser?.name.split(' ')[0]}`}
+        title={t('dashboard.welcome', { name: currentUser?.name.split(' ')[0] })}
         subtitle={today}
       />
 
       <div className="row g-4">
         <div className="col-md-6 col-lg-3">
           <StatCard
-            title="Weekly Hours"
+            title={t('notifications.stats.weeklyHours')}
             value={`${timeStats.weeklyHours.toFixed(1)} hrs`}
             icon={<Clock size={24} />}
             color="orange"
-            subtitle="Target: 37.5 hrs"
+            subtitle={t('dashboard.target', { hours: '37.5' })}
             trend={{ value: 2, isPositive: true }}
           />
         </div>
         
         <div className="col-md-6 col-lg-3">
           <StatCard
-            title="Leave Balance"
+            title={t('notifications.stats.leaveBalance')}
             value={`${leaveStats.remainingVacation} days`}
             icon={<Calendar size={24} />}
             color="primary"
-            subtitle="Vacation days remaining"
+            subtitle={t('dashboard.vacationDaysRemaining')}
           />
         </div>
         
         <div className="col-md-6 col-lg-3">
           <StatCard
-            title="Recuperation Hours"
+            title={t('notifications.stats.recuperationHours')}
             value={`${recupStats.totalAvailable.toFixed(1)} hrs`}
             icon={<RefreshCcw size={24} />}
             color="success"
-            subtitle={`${recupStats.totalPending.toFixed(1)} hrs pending`}
+            subtitle={t('dashboard.hoursStatus', { hours: recupStats.totalPending.toFixed(1) })}
           />
         </div>
         
         <div className="col-md-6 col-lg-3">
           <StatCard
-            title="Open Tickets"
+            title={t('notifications.stats.openTickets')}
             value={ticketStats.totalOpen + ticketStats.totalInProgress}
             icon={<TicketCheck size={24} />}
             color="warning"
-            subtitle={`${ticketStats.totalInProgress} in progress`}
+            subtitle={t('dashboard.ticketsInProgress', { count: ticketStats.totalInProgress })}
           />
         </div>
 
         <div className="col-md-6">
           <div className="card h-100 fade-in">
             <div className="card-header">
-              <h5 className="card-title mb-0">Today's Time Entry</h5>
+              <h5 className="card-title mb-0">{t('dashboard.todayTimeEntry')}</h5>
             </div>
             <div className="card-body">
               {todayEntry ? (
                 <div>
                   <div className="d-flex justify-content-between mb-3">
                     <div>
-                      <h6 className="mb-1">Working Hours</h6>
+                      <h6 className="mb-1">{t('dashboard.workingHours')}</h6>
                       <p className="text-muted mb-0">{todayEntry.startTime} - {todayEntry.endTime}</p>
                     </div>
                     <div className="text-end">
-                      <h6 className="mb-1">Total</h6>
-                      <p className="text-muted mb-0">{todayEntry.totalHours} hours</p>
+                      <h6 className="mb-1">{t('dashboard.total')}</h6>
+                      <p className="text-muted mb-0">{t('dashboard.hours', { count: todayEntry.totalHours })}</p>
                     </div>
                   </div>
                   
@@ -123,15 +125,15 @@ const Dashboard = () => {
                   
                   {todayEntry.description && (
                     <div className="mt-3">
-                      <h6 className="mb-1">Notes</h6>
+                      <h6 className="mb-1">{t('dashboard.notes')}</h6>
                       <p className="text-muted mb-0">{todayEntry.description}</p>
                     </div>
                   )}
                 </div>
               ) : (
                 <div className="text-center py-4">
-                  <p className="mb-3">No time entry recorded for today</p>
-                  <a href="/time-tracking" className="btn btn-orange">Record Time</a>
+                  <p className="mb-3">{t('dashboard.noTimeEntry')}</p>
+                  <a href="/time-tracking" className="btn btn-orange">{t('dashboard.recordTime')}</a>
                 </div>
               )}
             </div>
@@ -141,41 +143,41 @@ const Dashboard = () => {
         <div className="col-md-6">
           <div className="card h-100 fade-in">
             <div className="card-header">
-              <h5 className="card-title mb-0">Upcoming Leave</h5>
+              <h5 className="card-title mb-0">{t('dashboard.upcomingLeave')}</h5>
             </div>
             <div className="card-body">
               {upcomingLeave ? (
                 <div>
                   <div className="d-flex justify-content-between mb-3">
                     <div>
-                      <h6 className="mb-1">{upcomingLeave.type.charAt(0).toUpperCase() + upcomingLeave.type.slice(1)} Leave</h6>
+                      <h6 className="mb-1">{t(`dashboard.leaveTypes.${upcomingLeave.type}`)}</h6>
                       <p className="text-muted mb-0">
                         {format(new Date(upcomingLeave.startDate), 'MMM d')} - {format(new Date(upcomingLeave.endDate), 'MMM d, yyyy')}
                       </p>
                     </div>
                     <div>
                       <span className={`status-badge status-${upcomingLeave.status}`}>
-                        {upcomingLeave.status.charAt(0).toUpperCase() + upcomingLeave.status.slice(1)}
+                        {t(`common.status.${upcomingLeave.status}`)}
                       </span>
                     </div>
                   </div>
                   
                   <div>
-                    <h6 className="mb-1">Duration</h6>
-                    <p className="text-muted mb-0">{upcomingLeave.totalDays} {upcomingLeave.totalDays > 1 ? 'days' : 'day'}</p>
+                    <h6 className="mb-1">{t('dashboard.duration')}</h6>
+                    <p className="text-muted mb-0">{t('dashboard.days', { count: upcomingLeave.totalDays })}</p>
                   </div>
                   
                   {upcomingLeave.reason && (
                     <div className="mt-3">
-                      <h6 className="mb-1">Reason</h6>
+                      <h6 className="mb-1">{t('dashboard.reason')}</h6>
                       <p className="text-muted mb-0">{upcomingLeave.reason}</p>
                     </div>
                   )}
                 </div>
               ) : (
                 <div className="text-center py-4">
-                  <p className="mb-3">No upcoming leave scheduled</p>
-                  <a href="/leave-management" className="btn btn-orange">Request Leave</a>
+                  <p className="mb-3">{t('dashboard.noUpcomingLeave')}</p>
+                  <a href="/leave-management" className="btn btn-orange">{t('dashboard.requestLeave')}</a>
                 </div>
               )}
             </div>
@@ -187,20 +189,20 @@ const Dashboard = () => {
         <div className="col-12">
           <div className="card fade-in">
             <div className="card-header">
-              <h5 className="card-title mb-0">Recent Tickets</h5>
+              <h5 className="card-title mb-0">{t('dashboard.recentTickets')}</h5>
             </div>
             <div className="card-body p-0">
               <div className="table-responsive">
                 <table className="table table-hover mb-0">
                   <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Title</th>
-                      <th>Category</th>
-                      <th>Priority</th>
-                      <th>Status</th>
-                      <th>Created</th>
-                      <th>Action</th>
+                      <th>{t('dashboard.table.id')}</th>
+                      <th>{t('dashboard.table.title')}</th>
+                      <th>{t('dashboard.table.category')}</th>
+                      <th>{t('dashboard.table.priority')}</th>
+                      <th>{t('dashboard.table.status')}</th>
+                      <th>{t('dashboard.table.created')}</th>
+                      <th>{t('dashboard.table.action')}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -238,7 +240,7 @@ const Dashboard = () => {
                     
                     {tickets.length === 0 && (
                       <tr>
-                        <td colSpan={7} className="text-center py-4">No tickets found</td>
+                        <td colSpan={7} className="text-center py-4">{t('dashboard.noTickets')}</td>
                       </tr>
                     )}
                   </tbody>
@@ -246,7 +248,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="card-footer text-end">
-              <a href="/tickets" className="btn btn-link">View All Tickets</a>
+              <a href="/tickets" className="btn btn-link">{t('dashboard.viewAllTickets')}</a>
             </div>
           </div>
         </div>

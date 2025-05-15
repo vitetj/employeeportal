@@ -59,7 +59,42 @@
     "ru": "Russe"
   },
   "dashboard": {
-    "welcome": "Bonjour, {{name}}"
+    "welcome": "Bonjour, {{name}}",
+    "target": "Objectif : {{hours}} h",
+    "vacationDaysRemaining": "Jours de congés restants",
+    "hoursStatus": "{{hours}} h en attente",
+    "ticketsInProgress": "{{count}} en cours",
+    "todayTimeEntry": "Entrée du jour",
+    "workingHours": "Heures de travail",
+    "total": "Total",
+    "hours": "{{count}} heures",
+    "notes": "Notes",
+    "noTimeEntry": "Aucune entrée enregistrée aujourd'hui",
+    "recordTime": "Enregistrer le temps",
+    "upcomingLeave": "Congés à venir",
+    "leaveTypes": {
+      "vacation": "Congés payés",
+      "sick": "Congé maladie",
+      "personal": "Congé personnel",
+      "other": "Autre congé"
+    },
+    "duration": "Durée",
+    "days": "{{count}} {{count, plural, one {jour} other {jours}}}",
+    "reason": "Motif",
+    "noUpcomingLeave": "Aucun congé prévu",
+    "requestLeave": "Demander un congé",
+    "recentTickets": "Tickets récents",
+    "table": {
+      "id": "ID",
+      "title": "Titre",
+      "category": "Catégorie",
+      "priority": "Priorité",
+      "status": "Statut",
+      "created": "Créé le",
+      "action": "Action"
+    },
+    "noTickets": "Aucun ticket trouvé",
+    "viewAllTickets": "Voir tous les tickets"
   },
   "notifications": {
     "leaveApproved": {

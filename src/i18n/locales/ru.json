@@ -59,7 +59,42 @@
     "ru": "Русский"
   },
   "dashboard": {
-    "welcome": "Здравствуйте, {{name}}"
+    "welcome": "Здравствуйте, {{name}}",
+    "target": "Цель: {{hours}} ч",
+    "vacationDaysRemaining": "Осталось дней отпуска",
+    "hoursStatus": "{{hours}} ч ожидают",
+    "ticketsInProgress": "{{count}} в работе",
+    "todayTimeEntry": "Запись времени за сегодня",
+    "workingHours": "Рабочие часы",
+    "total": "Всего",
+    "hours": "{{count}} {{count, plural, one {час} few {часа} other {часов}}}",
+    "notes": "Заметки",
+    "noTimeEntry": "Нет записей за сегодня",
+    "recordTime": "Записать время",
+    "upcomingLeave": "Предстоящие отпуска",
+    "leaveTypes": {
+      "vacation": "Отпуск",
+      "sick": "Больничный",
+      "personal": "Личный отпуск",
+      "other": "Другой отпуск"
+    },
+    "duration": "Продолжительность",
+    "days": "{{count}} {{count, plural, one {день} few {дня} other {дней}}}",
+    "reason": "Причина",
+    "noUpcomingLeave": "Нет запланированных отпусков",
+    "requestLeave": "Запросить отпуск",
+    "recentTickets": "Последние заявки",
+    "table": {
+      "id": "ID",
+      "title": "Название",
+      "category": "Категория",
+      "priority": "Приоритет",
+      "status": "Статус",
+      "created": "Создано",
+      "action": "Действие"
+    },
+    "noTickets": "Заявки не найдены",
+    "viewAllTickets": "Показать все заявки"
   },
   "notifications": {
     "leaveApproved": {
