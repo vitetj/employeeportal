@@ -1,0 +1,243 @@
+/* Custom styles on top of Boosted framework */
+
+:root {
+  --orange-brand: #FF7900;
+  --orange-dark: #E66D00;
+  --orange-light: #FFB273;
+  --blue-primary: #2196F3;
+  --black-light: #2C2C2C;
+  --grey-bg: #F8F9FA;
+  --grey-light: #E9ECEF;
+  --success: #28A745;
+  --warning: #FFC107;
+  --danger: #DC3545;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  background-color: var(--grey-bg);
+  color: var(--black-light);
+  margin: 56px 0 0 0;
+  padding-bottom: 2rem;
+}
+
+.main-content {
+  margin-left: 250px;
+  transition: margin-left 0.3s;
+  padding: 2rem;
+  min-height: calc(100vh - 56px);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (max-width: 991.98px) {
+  .main-content {
+    margin-left: 0;
+  }
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-group .btn {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  
+  .status-badge {
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--grey-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 56px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1029;
+  transition: transform 0.3s;
+}
+
+.sidebar .nav-link {
+  padding: 12px 20px;
+  color: var(--black-light);
+  border-left: 3px solid transparent;
+}
+
+.sidebar .nav-link:hover {
+  background-color: var(--grey-light);
+}
+
+.sidebar .nav-link.active {
+  color: var(--orange-brand);
+  border-left-color: var(--orange-brand);
+  font-weight: 600;
+}
+
+.sidebar-header {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.sidebar-header h5 {
+  margin: 0;
+  color: var(--orange-brand);
+}
+
+.btn-orange {
+  background-color: var(--orange-brand);
+  border-color: var(--orange-brand);
+  color: white;
+}
+
+.btn-orange:hover {
+  background-color: var(--orange-dark);
+  border-color: var(--orange-dark);
+  color: white;
+}
+
+.card-header {
+  background-color: var(--grey-light);
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.card-header h5.card-title {
+  color: var(--black-light);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-orange {
+  color: var(--orange-brand);
+}
+
+.bg-orange {
+  background-color: var(--orange-brand);
+}
+
+.bg-blue {
+  background-color: var(--blue-primary);
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-approved {
+  background-color: var(--success);
+  color: white;
+}
+
+.status-pending {
+  background-color: var(--warning);
+  color: black;
+}
+
+.status-rejected {
+  background-color: var(--danger);
+  color: white;
+}
+
+.status-open {
+  background-color: var(--blue-primary);
+  color: white;
+}
+
+.status-closed {
+  background-color: var(--grey-light);
+  color: black;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: var(--orange-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 1000;
+  font-size: 0.8rem;
+}
